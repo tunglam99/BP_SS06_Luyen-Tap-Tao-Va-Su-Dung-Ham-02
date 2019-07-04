@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaithua(n) {
+        let gt = 1;
+        for (let i = 1; i <= n; i++) {
+             gt *= i;
+        }
+        return gt;
+    }
+    let kq = giaithua(prompt("nhap vao 1 so bat ky:"));
+    document.write("ket qua tinh giai thua la  "  + kq);
+</script>
+</body>
+</html>

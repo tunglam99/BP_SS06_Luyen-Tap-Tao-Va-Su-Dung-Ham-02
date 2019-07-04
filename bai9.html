@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let n = prompt("nhap so phan tu cua mang");
+    for (let i =0; i<n;i++) {
+        a[i] = prompt("nhap cac phan tu cua mang")
+    }
+    let m = prompt("nhap phan tu can tim");
+    function check(n) {
+        for (let j =0; j<n; j++) {
+            if (m == a[i]) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+    function count() {
+        let dem = 0;
+        for (let j = 0; j<n; j++) {
+            if (a[j] == m) {
+                dem ++;
+            }
+        }
+        return dem;
+    }
+
+    if (check(n)) {
+        document.write("phan tu co trong mang")
+    } else {
+        document.write('-1')
+    }
+    let gt = count();
+    document.write("<br>"+ gt);
+</script>
+</body>
+</html>
